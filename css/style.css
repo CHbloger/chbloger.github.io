@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #6c757d;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.code-font {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+/* Custom upload area */
+.upload-area {
+    border: 2px dashed #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: var(--primary-color);
+    background-color: #f8f9fa;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.color-box:hover {
+    transform: translateY(-5px);
+}
+
+.color-box span {
+    background: rgba(255,255,255,0.9);
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Scrollbar styling for code blocks */
+textarea::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+textarea::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Highlight matches in Regex */
+.highlight-match {
+    background-color: #fff3cd;
+    border-bottom: 2px solid #ffc107;
+}
+
+/* JSON Output styling */
+#jsonOutput.error {
+    border-color: #dc3545;
+    background-color: #fff8f8;
+}
+
+/* Toast/Alert Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.toast-custom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    animation: fadeIn 0.3s ease-out;
+}
