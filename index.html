@@ -3,337 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="LjeCJATwS7kFpMBU8-j-EhVPZjpf_rr6OJrD-6wp7Hg" />
-    <meta name="naver-site-verification" content="e9c0133166104938dd3396e3e2479e1804eb302a" />
-    
-    <title>DevTools Pro - 개발자 및 블로거를 위한 무료 올인원 유틸리티</title>
-
-    <meta name="description" content="JSON 포맷터, WebP 이미지 변환, Base64 인코딩, 정규식 테스트, 마크다운 변환, QR코드 생성 등 개발자와 블로거에게 필요한 도구를 설치 없이 웹에서 바로 사용하세요.">
-    <meta name="keywords" content="JSON 뷰어, JSON 정렬, WebP 변환기, Base64 디코더, 정규표현식 검사기, 마크다운 에디터, QR코드 만들기, 색상 추출, 개발자 도구">
-    <meta name="author" content="DevTools Pro">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="DevTools Pro - 개발 생산성을 높이는 올인원 도구">
-    <meta property="og:description" content="설치 없는 무료 웹 기반 개발 도구 모음 (JSON, WebP, Regex, Markdown 등)">
-    <meta property="og:url" content="https://your-domain.com"> <meta property="og:image" content="https://your-domain.com/og-image.jpg"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>DevTools Pro - 개발자 및 블로거를 위한 무료 온라인 도구 모음</title>
+    <meta name="description" content="JSON 포맷터, WebP 변환, Base64 인코더, 정규식 테스트 등 개발자와 콘텐츠 크리에이터를 위한 필수 도구를 무료로 제공합니다.">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4327767312074157" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#"><i class="fas fa-tools me-2"></i>DevTools Pro</a>
+            <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-tools me-2"></i>DevTools Pro</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto" id="toolTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="tab-json" data-bs-toggle="tab" href="#content-json" role="tab">JSON 도구</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-webp" data-bs-toggle="tab" href="#content-webp" role="tab">WebP 변환</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-base64" data-bs-toggle="tab" href="#content-base64" role="tab">Base64</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-regex" data-bs-toggle="tab" href="#content-regex" role="tab">정규식</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-markdown" data-bs-toggle="tab" href="#content-markdown" role="tab">Markdown</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-color" data-bs-toggle="tab" href="#content-color" role="tab">색상 추출</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-qrcode" data-bs-toggle="tab" href="#content-qrcode" role="tab">QR코드</a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="json-formatter.html">JSON 도구</a></li>
+                    <li class="nav-item"><a class="nav-link" href="webp-converter.html">WebP 변환</a></li>
+                    <li class="nav-item"><a class="nav-link" href="base64-encoder.html">Base64</a></li>
+                    <li class="nav-item"><a class="nav-link" href="regex-tester.html">정규식</a></li>
+                    <li class="nav-item"><a class="nav-link" href="markdown-editor.html">Markdown</a></li>
+                    <li class="nav-item"><a class="nav-link" href="color-extractor.html">색상 추출</a></li>
+                    <li class="nav-item"><a class="nav-link" href="qrcode-generator.html">QR코드</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">개발 효율을 높여주는 올인원 도구상자</h1>
+            <p class="lead mb-4">로그인이나 설치 없이 웹 브라우저에서 바로 사용하세요.</p>
+        </div>
+    </header>
+
     <!-- AdSense Top Banner -->
     <div class="container mt-4 mb-4">
-        <div class="card bg-white border-0 shadow-sm text-center overflow-hidden">
-            <div class="card-body p-2">
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-4327767312074157" 
-                     data-ad-slot="1234567890"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+        <div class="card bg-white border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+                <div class="adsense-placeholder bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-muted rounded" style="height: 90px; border: 1px dashed #ccc;">
+                    <span class="small">광고 배너 영역 (90px 높이)</span>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Main Content -->
+    <!-- Tools Grid -->
     <div class="container mb-5">
-        <div class="tab-content" id="myTabContent">
+        <div class="row g-4">
 
-            <!-- 1. JSON Formatter -->
-            <div class="tab-pane fade show active" id="content-json" role="tabpanel">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white py-3">
-                        <h5 class="mb-0"><i class="fas fa-code me-2 text-primary"></i>JSON 포맷터 & 검증기</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label">입력 JSON</label>
-                                <textarea id="jsonInput" class="form-control code-font" rows="15" placeholder="JSON 데이터를 여기에 붙여넣으세요..."></textarea>
+            <!-- JSON -->
+            <div class="col-md-6 col-lg-4">
+                <a href="json-formatter.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-circle bg-primary bg-opacity-10 text-primary mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <i class="fas fa-code fa-2x"></i>
                             </div>
-                            <div class="col-md-6">
-                                <label class="form-label">결과</label>
-                                <textarea id="jsonOutput" class="form-control code-font" rows="15" readonly></textarea>
-                            </div>
+                            <h5 class="card-title text-dark fw-bold">JSON 포맷터 & 검증기</h5>
+                            <p class="card-text text-muted small">못생긴 JSON 데이터를 예쁘게 정렬하고 문법 오류를 검사합니다. 압축 기능도 지원합니다.</p>
                         </div>
-                        <div class="mt-3 d-flex gap-2">
-                            <button id="btnJsonFormat" class="btn btn-primary"><i class="fas fa-indent me-2"></i>포맷팅 (정렬)</button>
-                            <button id="btnJsonMinify" class="btn btn-secondary"><i class="fas fa-compress me-2"></i>압축 (Minify)</button>
-                            <button id="btnJsonValidate" class="btn btn-success"><i class="fas fa-check me-2"></i>검증</button>
-                            <button id="btnJsonClear" class="btn btn-outline-danger ms-auto">지우기</button>
-                        </div>
-                        <div id="jsonStatus" class="mt-3"></div>
                     </div>
-                </div>
+                </a>
             </div>
 
-            <!-- 2. WebP Converter -->
-            <div class="tab-pane fade" id="content-webp" role="tabpanel">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white py-3">
-                        <h5 class="mb-0"><i class="fas fa-image me-2 text-primary"></i>이미지 WebP 변환기</h5>
-                    </div>
-                    <div class="card-body text-center p-5">
-                        <div class="upload-area p-5 border rounded bg-light mb-4" id="webpDropZone">
-                            <i class="fas fa-cloud-upload-alt fa-3x text-muted mb-3"></i>
-                            <p class="mb-3">이미지(JPG, PNG)를 드래그하거나 선택하세요.</p>
-                            <input type="file" id="webpInput" accept="image/jpeg, image/png" class="form-control w-50 mx-auto" style="display:none;">
-                            <button class="btn btn-primary" onclick="document.getElementById('webpInput').click()">파일 선택</button>
-                        </div>
-                        <div id="webpResult" class="d-none">
-                            <h5>변환 결과</h5>
-                            <div class="row justify-content-center mt-3">
-                                <div class="col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="mb-2">원본</p>
-                                            <img id="webpSourceImg" class="img-fluid mb-2 rounded border" style="max-height: 300px;">
-                                            <div id="webpSourceInfo" class="text-muted small"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card bg-success bg-opacity-10 border-success">
-                                        <div class="card-body">
-                                            <p class="mb-2 fw-bold text-success">WebP 변환됨</p>
-                                            <img id="webpOutputImg" class="img-fluid mb-2 rounded border" style="max-height: 300px;">
-                                            <div id="webpOutputInfo" class="text-muted small mb-2"></div>
-                                            <a id="webpDownloadBtn" class="btn btn-success btn-sm" download="converted.webp"><i class="fas fa-download me-2"></i>다운로드</a>
-                                        </div>
-                                    </div>
-                                </div>
+            <!-- WebP -->
+            <div class="col-md-6 col-lg-4">
+                <a href="webp-converter.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-circle bg-success bg-opacity-10 text-success mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <i class="fas fa-image fa-2x"></i>
                             </div>
+                            <h5 class="card-title text-dark fw-bold">WebP 이미지 변환기</h5>
+                            <p class="card-text text-muted small">JPG, PNG 이미지를 구글이 권장하는 차세대 포맷 WebP로 변환하여 로딩 속도를 개선하세요.</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
-            <!-- 3. Base64 Converter -->
-            <div class="tab-pane fade" id="content-base64" role="tabpanel">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white py-3">
-                        <h5 class="mb-0"><i class="fas fa-exchange-alt me-2 text-primary"></i>Base64 인코더/디코더</h5>
-                    </div>
-                    <div class="card-body">
-                        <ul class="nav nav-tabs mb-3" id="base64Tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="text-tab" data-bs-toggle="tab" href="#base64-text" role="tab">텍스트</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="image-tab" data-bs-toggle="tab" href="#base64-image" role="tab">이미지</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="base64-text" role="tabpanel">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label class="form-label">일반 텍스트</label>
-                                        <textarea id="base64TextInput" class="form-control code-font" rows="10"></textarea>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Base64</label>
-                                        <textarea id="base64TextOutput" class="form-control code-font" rows="10"></textarea>
-                                    </div>
-                                </div>
-                                <div class="mt-3 text-center">
-                                    <button id="btnBase64Encode" class="btn btn-primary me-2"><i class="fas fa-arrow-right me-2"></i>인코딩</button>
-                                    <button id="btnBase64Decode" class="btn btn-secondary"><i class="fas fa-arrow-left me-2"></i>디코딩</button>
-                                </div>
+            <!-- Base64 -->
+            <div class="col-md-6 col-lg-4">
+                <a href="base64-encoder.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-circle bg-warning bg-opacity-10 text-warning mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <i class="fas fa-exchange-alt fa-2x"></i>
                             </div>
-                            <div class="tab-pane fade" id="base64-image" role="tabpanel">
-                                <div class="mb-3">
-                                    <label class="form-label">이미지 파일을 선택하세요</label>
-                                    <input type="file" id="base64ImgInput" accept="image/*" class="form-control">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Base64 문자열</label>
-                                    <textarea id="base64ImgOutput" class="form-control code-font" rows="8" readonly></textarea>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 text-center">
-                                         <img id="base64ImgPreview" class="img-fluid border rounded" style="max-height: 200px; display: none;">
-                                    </div>
-                                </div>
-                            </div>
+                            <h5 class="card-title text-dark fw-bold">Base64 인코더/디코더</h5>
+                            <p class="card-text text-muted small">텍스트나 이미지 파일을 Base64 문자열로 인코딩하거나 디코딩하여 데이터를 안전하게 전송하세요.</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
-            <!-- 4. Regex Tester -->
-            <div class="tab-pane fade" id="content-regex" role="tabpanel">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white py-3">
-                        <h5 class="mb-0"><i class="fas fa-search me-2 text-primary"></i>정규표현식 테스트</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <label class="form-label">정규표현식 (Regex)</label>
-                            <div class="input-group">
-                                <span class="input-group-text">/</span>
-                                <input type="text" id="regexPattern" class="form-control code-font" placeholder="예: ^[a-z0-9]+$">
-                                <span class="input-group-text">/</span>
-                                <input type="text" id="regexFlags" class="form-control code-font" placeholder="g" style="max-width: 80px;">
+            <!-- Regex -->
+            <div class="col-md-6 col-lg-4">
+                <a href="regex-tester.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-circle bg-danger bg-opacity-10 text-danger mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <i class="fas fa-search fa-2x"></i>
                             </div>
-                            <div class="mt-2">
-                                <span class="me-2 small text-muted">프리셋:</span>
-                                <button class="btn btn-sm btn-outline-secondary regex-preset" data-regex="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">이메일</button>
-                                <button class="btn btn-sm btn-outline-secondary regex-preset" data-regex="^01(?:0|1|[6-9])-(?:\d{3}|\d{4})-\d{4}$">휴대폰번호(KR)</button>
-                                <button class="btn btn-sm btn-outline-secondary regex-preset" data-regex="^\d{4}-\d{2}-\d{2}$">날짜(YYYY-MM-DD)</button>
-                                <button class="btn btn-sm btn-outline-secondary regex-preset" data-regex="^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$">URL</button>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">테스트 문자열</label>
-                            <textarea id="regexText" class="form-control code-font" rows="6" placeholder="테스트할 텍스트를 입력하세요..."></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">결과</label>
-                            <div id="regexResult" class="p-3 bg-light border rounded code-font" style="min-height: 100px;"></div>
+                            <h5 class="card-title text-dark fw-bold">정규표현식 테스트</h5>
+                            <p class="card-text text-muted small">복잡한 정규식 패턴을 실시간으로 테스트하고, 이메일/전화번호 등 유용한 프리셋을 활용하세요.</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
-            <!-- 5. Markdown to HTML -->
-            <div class="tab-pane fade" id="content-markdown" role="tabpanel">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white py-3">
-                        <h5 class="mb-0"><i class="fab fa-markdown me-2 text-primary"></i>Markdown → HTML 변환기</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label">Markdown 입력</label>
-                                <textarea id="mdInput" class="form-control code-font" rows="20" placeholder="# 제목&#10;- 리스트 항목"></textarea>
+            <!-- Markdown -->
+            <div class="col-md-6 col-lg-4">
+                <a href="markdown-editor.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-circle bg-info bg-opacity-10 text-info mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <i class="fab fa-markdown fa-2x"></i>
                             </div>
-                            <div class="col-md-6">
-                                <label class="form-label d-flex justify-content-between">
-                                    <span>HTML 결과 / 미리보기</span>
-                                    <div>
-                                        <div class="btn-group btn-group-sm" role="group">
-                                            <input type="radio" class="btn-check" name="mdView" id="mdViewPreview" autocomplete="off" checked>
-                                            <label class="btn btn-outline-secondary" for="mdViewPreview">미리보기</label>
-                                            <input type="radio" class="btn-check" name="mdView" id="mdViewHtml" autocomplete="off">
-                                            <label class="btn btn-outline-secondary" for="mdViewHtml">HTML 소스</label>
-                                        </div>
-                                        <button class="btn btn-sm btn-primary ms-2" id="btnCopyHtml">복사</button>
-                                    </div>
-                                </label>
-                                <div id="mdPreview" class="border rounded p-3 bg-white overflow-auto" style="height: 500px;"></div>
-                                <textarea id="mdHtmlOutput" class="form-control code-font d-none" rows="20" readonly></textarea>
-                            </div>
+                            <h5 class="card-title text-dark fw-bold">Markdown → HTML</h5>
+                            <p class="card-text text-muted small">마크다운 문법으로 작성한 글을 HTML 코드로 즉시 변환하여 블로그나 웹사이트에 적용하세요.</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
-            <!-- 6. Color Palette -->
-            <div class="tab-pane fade" id="content-color" role="tabpanel">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white py-3">
-                        <h5 class="mb-0"><i class="fas fa-palette me-2 text-primary"></i>컬러 팔레트 추출기</h5>
-                    </div>
-                    <div class="card-body text-center">
-                        <div class="mb-4">
-                            <input type="file" id="colorInput" accept="image/*" class="form-control w-50 mx-auto">
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-md-6 mb-4">
-                                <img id="colorPreview" class="img-fluid rounded shadow-sm" style="max-height: 400px; display: none;">
+            <!-- Color Palette -->
+            <div class="col-md-6 col-lg-4">
+                <a href="color-extractor.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-circle bg-secondary bg-opacity-10 text-secondary mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <i class="fas fa-palette fa-2x"></i>
                             </div>
-                        </div>
-                        <div id="paletteResult" class="d-none">
-                            <h5>추출된 색상 팔레트</h5>
-                            <p class="text-muted small">색상을 클릭하여 코드를 복사하세요.</p>
-                            <div id="paletteContainer" class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-                                <!-- Colors will be inserted here -->
-                            </div>
+                            <h5 class="card-title text-dark fw-bold">컬러 팔레트 추출기</h5>
+                            <p class="card-text text-muted small">이미지를 업로드하면 주요 색상 코드를 추출하여 아름다운 컬러 팔레트를 만들어줍니다.</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
-            <!-- 7. QR Code -->
-            <div class="tab-pane fade" id="content-qrcode" role="tabpanel">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white py-3">
-                        <h5 class="mb-0"><i class="fas fa-qrcode me-2 text-primary"></i>QR코드 생성기</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">URL 또는 텍스트 입력</label>
-                                    <input type="text" id="qrText" class="form-control" placeholder="https://example.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">옵션</label>
-                                    <div class="row g-2">
-                                        <div class="col">
-                                            <input type="color" id="qrColorDark" class="form-control form-control-color w-100" value="#000000" title="QR Color">
-                                        </div>
-                                        <div class="col">
-                                            <input type="color" id="qrColorLight" class="form-control form-control-color w-100" value="#ffffff" title="Background Color">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button id="btnGenerateQR" class="btn btn-primary w-100 mb-4">QR코드 생성</button>
-
-                                <div class="text-center p-4 bg-light border rounded" id="qrContainerWrapper">
-                                    <div id="qrContainer" class="d-inline-block bg-white p-2"></div>
-                                </div>
-                                <div class="mt-3 text-center" id="qrDownloadSection" style="display:none;">
-                                    <button class="btn btn-success" id="btnDownloadQR"><i class="fas fa-download me-2"></i>이미지 다운로드</button>
-                                </div>
+            <!-- QR Code -->
+            <div class="col-md-6 col-lg-4 mx-auto">
+                <a href="qrcode-generator.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-circle bg-dark bg-opacity-10 text-dark mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <i class="fas fa-qrcode fa-2x"></i>
                             </div>
+                            <h5 class="card-title text-dark fw-bold">QR코드 생성기</h5>
+                            <p class="card-text text-muted small">URL, 텍스트, 와이파이 정보 등을 담은 QR코드를 생성하고 커스터마이징하여 다운로드하세요.</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
         </div>
@@ -341,28 +168,19 @@
 
     <!-- AdSense Bottom Banner -->
     <div class="container mb-5">
-        <div class="text-center">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-4327767312074157"
-                 data-ad-slot="0987654321"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+        <div class="adsense-placeholder bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-muted rounded mx-auto" style="max-width: 728px; height: 90px; border: 1px dashed #ccc;">
+            <span class="small">광고 배너 영역</span>
         </div>
     </div>
 
     <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2023 DevTools Pro. All rights reserved.</p>
+            <p class="mb-2">&copy; 2023 DevTools Pro. All rights reserved.</p>
+            <p class="small text-muted"><a href="privacy-policy.html" class="text-secondary text-decoration-none">개인정보처리방침</a></p>
         </div>
     </footer>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
 </body>
 </html>
